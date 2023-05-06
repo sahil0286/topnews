@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Nwesitem from './components/Nwesitem';
+import News from './components/News';
 
 function App() {
   return (
@@ -10,16 +10,10 @@ function App() {
       <h2>Top News</h2>
       <div className='row my-3'>
         <div className='col-md-4'>
-          <Nwesitem/>
+          <News/>
         </div>
-        <div className='col-md-4'>
-          <Nwesitem/>
-        </div>
-        <div className='col-md-4'>
-          <Nwesitem/>
         </div>
       </div>
-    </div>
     </>
   );
 }
