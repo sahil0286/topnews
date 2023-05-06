@@ -13,10 +13,16 @@ export default function News() {
 
   return (
     <>
+    <div className='row'>
+
         {data.map(item => (
-        // <li key={item.id}>{item.name}</li>
-        <Nwesitem title={item.title} desc={item.description} url={item.url} imgurl={item.urlToImage}/>
-      ))}
+            // <li key={item.id}>{item.name}</li>
+            <div className='col-md-4'>
+
+                <Nwesitem title={item.title} desc={item.description} url={item.url} imgurl={item.urlToImage}/>
+            </div>
+            ))}
+    </div>
     </>
   )
 }
