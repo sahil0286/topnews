@@ -4,6 +4,7 @@ import axios from 'axios';
 
 export default function News() {
     const [data, setData] = useState([]);
+    const [page, setpage] = useState(1)
 
     useEffect(() => {
       axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4')
@@ -19,9 +20,12 @@ export default function News() {
     }, [])
     
     const Increm=()=>{
-      
+      setpage(page+1)
+      console.log(page)
     }
     const Decrem=()=>{
+      setpage(page-1)
+      console.log(page)
 
     }
 
@@ -37,8 +41,8 @@ export default function News() {
             </div>
             ))}
         <div className='container d-flex justify-content-between'>
-        <button type="button" onClick={Increm} class="btn btn-secondary">&larr; Back</button>
-        <button type="button" onClick={Decrem} class="btn btn-secondary">Next &rarr;</button>
+        <button type="button" onClick={Decrem} class="btn btn-secondary">&larr; Back</button>
+        <button type="button" onClick={Increm} class="btn btn-secondary">Next &rarr;</button>
         </div>
     </div>
     </>
