@@ -49,7 +49,7 @@ export default function Footer() {
             <h5>Subscribe to our newsletter</h5>
             <p>Monthly digest of what's new and exciting from us.</p>
             <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" className="visually-hidden ">Email address</label>
+              <label htmlFor="newsletter1" className="visually-hidden ">Email address</label>
               <input id="newsletter1" type="text" className="form-control" placeholder="Email address"/>
               <button className="btn btn-primary" type="button">Subscribe</button>
             </div>
@@ -58,11 +58,11 @@ export default function Footer() {
       </div>
 
       <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+      <div className="col-md-4 d-flex align-items-center">
+      <a href="/" className="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
         <img src={iconavbar } style={{width:"40px" ,height:"40px"}} alt="TopNews icon" />
       </a>
-      <span class="mb-3 mb-md-0 text-light">© 2023 Sahil Fakir, Inc</span>
+      <span className="mb-3 mb-md-0 text-light">© 2023 Sahil Fakir, Inc</span>
     </div>
         <ul className="list-unstyled d-flex">
           <li className="ms-3"><a className="link-body-emphasis" href="/">
