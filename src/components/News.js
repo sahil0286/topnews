@@ -18,6 +18,12 @@ export default function News() {
   })
     }, [])
     
+    const Increm=()=>{
+      
+    }
+    const Decrem=()=>{
+
+    }
 
   return (
     <>
@@ -31,8 +37,8 @@ export default function News() {
             </div>
             ))}
         <div className='container d-flex justify-content-between'>
-        <button type="button" class="btn btn-secondary">&larr; Back</button>
-        <button type="button" class="btn btn-secondary">Next &rarr;</button>
+        <button type="button" onClick={Increm} class="btn btn-secondary">&larr; Back</button>
+        <button type="button" onClick={Decrem} class="btn btn-secondary">Next &rarr;</button>
         </div>
     </div>
     </>
