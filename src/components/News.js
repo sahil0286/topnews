@@ -44,7 +44,7 @@ export default function News() {
     <>
     <div className='row'>
 
-    <h2 className='text-center'>Top Headings</h2>
+    <h2 className='text-center'>Top Stories</h2>
         {data.map(item => (
             // <li key={item.id}>{item.name}</li>
             <div className='col-md-4'>
