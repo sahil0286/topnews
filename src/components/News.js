@@ -21,7 +21,7 @@ export default function News() {
     
     const Increm=async ()=>{
       setpage(page+1)
-      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page${page}`)
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page}`)
   .then(function (response) {
     // handle success
     setData(response.data.articles)
@@ -29,7 +29,7 @@ export default function News() {
     }
     const Decrem=async ()=>{
       setpage(page-1)
-      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page${page}`)
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page}`)
   .then(function (response) {
     // handle success
     setData(response.data.articles)
