@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 
 function App() {
+  document.body.style.backgroundColor = "#7A8289";
+  document.body.style.color = "black";
   return (
     <>
     <Navbar/>
