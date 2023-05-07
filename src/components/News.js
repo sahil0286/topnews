@@ -31,16 +31,14 @@ export default function News() {
         axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&pageSize=12`)
         .then(function (response) {
           setpage(1+ page)
-          setData(response.data.articles)
-          console.log(page)})
+          setData(response.data.articles)})
       }
     }
     const Decrem=()=>{
       axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&pageSize=12`)
       .then(function (response) {
         setpage(-1+page)
-        setData(response.data.articles)
-        console.log(page)})
+        setData(response.data.articles)})
     }
 
   return (
@@ -56,7 +54,7 @@ export default function News() {
             ))}
         <div className='container d-flex justify-content-between'>
         <button type="button" disabled={page<=1} onClick={Decrem} className="btn btn-dark">&larr; Back</button>
-        <button type="button" onClick={Increm} className="btn btn-dark">Next &rarr;</button>
+        <button type="button" disabled={page + 1 > Math.ceil(itemcount/12)} onClick={Increm} className="btn btn-dark">Next &rarr;</button>
         </div>
     </div>
     </>
