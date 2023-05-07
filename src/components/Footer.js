@@ -13,34 +13,34 @@ export default function Footer() {
         <div className="col-6 col-md-2 mb-3">
           <h5>STOCK MARKET UPDATES</h5>
           <ul className="nav flex-column">
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Stock market trends</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Fundamental analysis</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Stock market crashes</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">IPOs (Initial Public Offerings)</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Market sentiment</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Stock market trends</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Fundamental analysis</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Stock market crashes</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">IPOs (Initial Public Offerings)</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Market sentiment</a></li>
           </ul>
         </div>
 
         <div className="col-6 col-md-2 mb-3">
           <h5>CASINOS / ONLINE BETTING</h5>
           <ul className="nav flex-column">
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Jackpot Wins</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Gaming Regulations</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Betting Odds</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Table Games
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Jackpot Wins</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Gaming Regulations</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Betting Odds</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Table Games
 </a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Roulette Wheel</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Roulette Wheel</a></li>
           </ul>
         </div>
 
         <div className="col-6 col-md-2 mb-3">
           <h5>ABOUT</h5>
           <ul className="nav flex-column">
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Home</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Features</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-body-secondary">About us</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Home</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Features</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">Pricing</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">FAQs</a></li>
+            <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-light">About us</a></li>
           </ul>
         </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
             <h5>Subscribe to our newsletter</h5>
             <p>Monthly digest of what's new and exciting from us.</p>
             <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" className="visually-hidden">Email address</label>
+              <label for="newsletter1" className="visually-hidden ">Email address</label>
               <input id="newsletter1" type="text" className="form-control" placeholder="Email address"/>
               <button className="btn btn-primary" type="button">Subscribe</button>
             </div>
@@ -59,10 +59,10 @@ export default function Footer() {
 
       <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
         <img src={iconavbar } style={{width:"40px" ,height:"40px"}} alt="TopNews icon" />
       </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sahil Fakir, Inc</span>
+      <span class="mb-3 mb-md-0 text-light">© 2023 Sahil Fakir, Inc</span>
     </div>
         <ul className="list-unstyled d-flex">
           <li className="ms-3"><a className="link-body-emphasis" href="/">
