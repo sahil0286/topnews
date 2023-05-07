@@ -62,7 +62,7 @@ export default function Footer() {
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
         <img src={iconavbar } style={{width:"40px" ,height:"40px"}} alt="TopNews icon" />
       </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Top News, Inc</span>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sahil Fakir, Inc</span>
     </div>
         <ul className="list-unstyled d-flex">
           <li className="ms-3"><a className="link-body-emphasis" href="/">
