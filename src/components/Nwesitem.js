@@ -7,7 +7,7 @@ export default function Nwesitem(props) {
         <img src={props.imgurl} className="card-img-top" style={{ height: "200px" , objectFit: "cover"}} alt={props.title} />
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
-          <p className="card-text" style={{ maxWidth: "200px"}}>{props.desc}</p>
+          <p className="card-text" >{props.desc}</p>
           <a href={props.url} className="btn btn-primary">
             Read More
           </a>
