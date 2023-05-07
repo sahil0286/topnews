@@ -14,7 +14,6 @@ export default function News() {
     setData(response.data.articles)
     setitemcount(response.data.totalResults)
     console.log(response.data.articles);
-    console.log(response.data.totalResults);
   })
   .catch(function (error) {
     // handle error
@@ -49,7 +48,7 @@ export default function News() {
         {data.map(item => (
             // <li key={item.id}>{item.name}</li>
             <div className='col-md-4'>
-                <Nwesitem title={item.title?item.title.slice(0, 40)+" ...":"After Drew Barrymore drops out as host, MTV Awards show won't be live event"} desc={item.description?item.description.slice(0, 100)+" ...":"The news also comes after the Writer's Guild of America announced​ that it planned to picket outside the show."} url={item.url?item.url:"https://www.cbsnews.com/news/mtv-awards-drew-barrymore-writers-strike/"} imgurl={item.urlToImage?item.urlToImage:"https://assets2.cbsnewsstatic.com/hub/i/r/2023/05/06/4b62e70b-765e-4751-aa34-2f5dfe8225b8/thumbnail/1200x630/59f41eeff6c2d9b6b6deab7cb72fe6ee/gettyimages-1401233339.jpg"}/>
+                <Nwesitem key={item.id}title={item.title?item.title.slice(0, 40)+" ...":"After Drew Barrymore drops out as host, MTV Awards show won't be live event"} desc={item.description?item.description.slice(0, 100)+" ...":"The news also comes after the Writer's Guild of America announced​ that it planned to picket outside the show."} url={item.url?item.url:"https://www.cbsnews.com/news/mtv-awards-drew-barrymore-writers-strike/"} imgurl={item.urlToImage?item.urlToImage:"https://assets2.cbsnewsstatic.com/hub/i/r/2023/05/06/4b62e70b-765e-4751-aa34-2f5dfe8225b8/thumbnail/1200x630/59f41eeff6c2d9b6b6deab7cb72fe6ee/gettyimages-1401233339.jpg"}/>
             </div>
             ))}
         <div className='container d-flex justify-content-between'>
