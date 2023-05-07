@@ -19,14 +19,21 @@ export default function News() {
   })
     }, [])
     
-    const Increm=()=>{
+    const Increm=async ()=>{
       setpage(page+1)
-      console.log(page)
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page${page}`)
+  .then(function (response) {
+    // handle success
+    setData(response.data.articles)
+      console.log(page)})
     }
-    const Decrem=()=>{
+    const Decrem=async ()=>{
       setpage(page-1)
-      console.log(page)
-
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page${page}`)
+  .then(function (response) {
+    // handle success
+    setData(response.data.articles)
+      console.log(page)})
     }
 
   return (
@@ -41,7 +48,7 @@ export default function News() {
             </div>
             ))}
         <div className='container d-flex justify-content-between'>
-        <button type="button" onClick={Decrem} class="btn btn-secondary">&larr; Back</button>
+        <button type="button" disabled={page<=1} onClick={Decrem} class="btn btn-secondary">&larr; Back</button>
         <button type="button" onClick={Increm} class="btn btn-secondary">Next &rarr;</button>
         </div>
     </div>
