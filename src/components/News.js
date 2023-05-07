@@ -48,8 +48,8 @@ export default function News() {
             </div>
             ))}
         <div className='container d-flex justify-content-between'>
-        <button type="button" disabled={page<=1} onClick={Decrem} class="btn btn-secondary">&larr; Back</button>
-        <button type="button" onClick={Increm} class="btn btn-secondary">Next &rarr;</button>
+        <button type="button" disabled={page<=1} onClick={Decrem} class="btn btn-dark">&larr; Back</button>
+        <button type="button" onClick={Increm} class="btn btn-dark">Next &rarr;</button>
         </div>
     </div>
     </>
