@@ -8,7 +8,8 @@ export default function News(props) {
     const [itemcount, setitemcount] = useState()
 
     useEffect(() => {
-      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=1&pageSize=${props.pageSize}`)
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=1&pageSize=
+      ${props.pageSize}`)
   .then(function (response) {
     // handle success
     setData(response.data.articles)
@@ -22,19 +23,19 @@ export default function News(props) {
     }, [])
     
     const Increm=()=>{
-      if(page + 1 > Math.ceil(itemcount/12))
+      if(page + 1 > Math.ceil(itemcount/props.pageSize))
       {
       }
       else
       {
-        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&${props.pageSize}`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&pageSize=${props.pageSize}`)
         .then(function (response) {
           setpage(1+ page)
           setData(response.data.articles)})
       }
     }
     const Decrem=()=>{
-      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&${props.pageSize}`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&pageSize=${props.pageSize}`)
       .then(function (response) {
         setpage(-1+page)
         setData(response.data.articles)})
@@ -53,7 +54,7 @@ export default function News(props) {
             ))}
         <div className='container d-flex justify-content-between'>
         <button type="button" disabled={page<=1} onClick={Decrem} className="btn btn-dark">&larr; Back</button>
-        <button type="button" disabled={page + 1 > Math.ceil(itemcount/12)} onClick={Increm} className="btn btn-dark">Next &rarr;</button>
+        <button type="button" disabled={page + 1 > Math.ceil(itemcount/props.pageSize)} onClick={Increm} className="btn btn-dark">Next &rarr;</button>
         </div>
     </div>
     </>
