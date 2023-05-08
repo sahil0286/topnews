@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import News from './components/News';
-import { Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   document.body.style.backgroundColor = "#7A8289";
@@ -10,33 +10,17 @@ function App() {
   return (
     <>
         <Navbar />
-      <Router>
-          <Route exact path="/">
-            <News pageSize="9" category="general" />
-          </Route>
-          <Route exact path="/technology">
-            <News pageSize="9" category="technology" />
-          </Route>
-          <Route exact path="/sports">
-            <News pageSize="9" category="sports" />
-          </Route>
-          <Route exact path="/science">
-            <News pageSize="9" category="science" />
-          </Route>
-          <Route exact path="/health">
-            <News pageSize="9" category="health" />
-          </Route>
-          <Route exact path="/business">
-            <News pageSize="9" category="business" />
-          </Route>
-          <Route exact path="/entertainment">
-            <News pageSize="9" category="entertainment" />
-          </Route>
-          <Route path="*">
-            <h1 className='text-center my-5'>404 Not Found</h1>
-          </Route>
+      <Routes>
+          <Route path="/" element={<News pageSize="9" category="general" />} />
+          <Route exact path="/technology" element={<News pageSize="9" category="technology" />}/>        
+          <Route exact path="/sports"  element={<News pageSize="9" category="sports" />}/>  
+          <Route exact path="/science" element={<News pageSize="9" category="science" />}/>
+          <Route exact path="/health" element={<News pageSize="9" category="health" />}/>
+          <Route exact path="/business" element={<News pageSize="9" category="business" />}/>
+          <Route exact path="/entertainment" element={<News pageSize="9" category="entertainment" />}/>
+          <Route path="*" element={<h1 className='text-center my-5'>404 Not Found</h1>}/>
+      </Routes>
         <Footer />
-      </Router>
     </>
   );
 }
