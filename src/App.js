@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
 } from "react-router-dom";
 
@@ -13,9 +12,8 @@ function App() {
   document.body.style.color = "black";
   return (
     <>
-      <Router>
         <Navbar />
-        <Switch>
+      <Router>
           <Route exact path="/">
             <News pageSize="9" category="general" />
           </Route>
@@ -40,7 +38,6 @@ function App() {
           <Route path="*">
             <h1 className='text-center my-5'>404 Not Found</h1>
           </Route>
-        </Switch>
         <Footer />
       </Router>
     </>
