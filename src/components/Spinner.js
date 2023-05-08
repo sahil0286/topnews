@@ -1,10 +1,10 @@
 import React from 'react'
-import Spinner from "./media/Spinner.gif"
+import lodding from "./media/lodding.gif"
 
 export default function Spinner() {
   return (
-    <div>
-        <img src={Spinner} alt="Spinner" />
+    <div className='container text-center'>
+        <img src={lodding} alt="lodding" style={{height:"40px"}} />
     </div>
   )
 }
