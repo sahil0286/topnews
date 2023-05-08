@@ -50,6 +50,8 @@ export default function News(props) {
 
   return (
     <>
+    <div className='container my-5'>
+    <div className='row my-3'>
     <div className='row'>
         <h2 className='text-center'>Top Stories</h2>
         {lodding && <Spinner/>}
@@ -63,7 +65,8 @@ export default function News(props) {
                 <button type="button" disabled={page<=1} onClick={Decrem} className="btn btn-dark">&larr; Back</button>
                 <button type="button" disabled={page + 1 > Math.ceil(itemcount/props.pageSize)} onClick={Increm} className="btn btn-dark">Next &rarr;</button>
             </div>
-          
+          </div>
+        </div>
     </div>
     </>
   )
