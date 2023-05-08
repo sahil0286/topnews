@@ -2,10 +2,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import News from './components/News';
-import {
-  BrowserRouter as Router,
-  Route,
-} from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 
 function App() {
   document.body.style.backgroundColor = "#7A8289";
