@@ -11,7 +11,7 @@ function App() {
     <Navbar/>
       <div className='container my-5'>
         <div className='row my-3'>
-          <News pageSize="12"/>
+          <News pageSize="3"/>
         </div>
       </div>
       <Footer/>
