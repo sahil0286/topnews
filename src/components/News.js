@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Nwesitem from './Nwesitem';
 import axios from 'axios';
 
-export default function News() {
+export default function News(props) {
     const [data, setData] = useState([]);
     const [page, setpage] = useState(1);
     const [itemcount, setitemcount] = useState()
 
     useEffect(() => {
-      axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=1&pageSize=12')
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=1&pageSize=${props.pageSize}`)
   .then(function (response) {
     // handle success
     setData(response.data.articles)
@@ -27,14 +27,14 @@ export default function News() {
       }
       else
       {
-        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&pageSize=12`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&${props.pageSize}`)
         .then(function (response) {
           setpage(1+ page)
           setData(response.data.articles)})
       }
     }
     const Decrem=()=>{
-      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&pageSize=12`)
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&${props.pageSize}`)
       .then(function (response) {
         setpage(-1+page)
         setData(response.data.articles)})
