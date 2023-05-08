@@ -23,7 +23,7 @@ export default function News(props) {
     // handle error
     console.log(error);
   })
-    }, [])
+    })
     
     const Increm=()=>{
       if(page + 1 > Math.ceil(itemcount/props.pageSize))
