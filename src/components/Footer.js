@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <div className="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
       <div className="col-md-4 d-flex align-items-center">
       <Link to="/" className="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
         <img src={iconavbar } style={{width:"40px" ,height:"40px"}} alt="TopNews icon" />
