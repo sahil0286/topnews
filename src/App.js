@@ -16,12 +16,13 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-          <Route path="/technology" element={<News pageSize="3" category="technology" />}></Route>
-          <Route path="/sports" element={<News pageSize="3" category="sports" />}></Route>
-          <Route path="/science" element={<News pageSize="3" category="science" />}></Route>
-          <Route path="/health" element={<News pageSize="3" category="health" />}></Route>
-          <Route path="/business" element={<News pageSize="3" category="business" />}></Route>
-          <Route path="/entertainment" element={<News pageSize="3" category="entertainment" />}></Route>
+          <Route exact path="/" key="general" element={<News pageSize="9" category="general" />}></Route>
+          <Route exact path="/technology" key="technology" element={<News pageSize="9" category="technology" />}></Route>
+          <Route exact path="/sports" key="sports" element={<News pageSize="9" category="sports" />}></Route>
+          <Route exact path="/science" key="science" element={<News pageSize="9" category="science" />}></Route>
+          <Route exact path="/health" key="health" element={<News pageSize="9" category="health" />}></Route>
+          <Route exact path="/business" key="business" element={<News pageSize="9" category="business" />}></Route>
+          <Route exact path="/entertainment" key="entertainment" element={<News pageSize="9" category="entertainment" />}></Route>
       </Routes>
       <Footer/>
       </Router>
