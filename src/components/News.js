@@ -10,7 +10,7 @@ export default function News(props) {
     const [lodding, setLodding] = useState(true)
 
     useEffect(() => {
-      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=1&pageSize=
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=1&pageSize=
       ${props.pageSize}`)
   .then(function (response) {
     setLodding(true)
@@ -32,7 +32,7 @@ export default function News(props) {
       else
       {
         setLodding(true)
-        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&pageSize=${props.pageSize}`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page+1}&pageSize=${props.pageSize}`)
         .then(function (response) {
           setpage(1+ page)
           setData(response.data.articles)})
@@ -41,7 +41,7 @@ export default function News(props) {
     }
     const Decrem=()=>{
       setLodding(true)
-        axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&pageSize=${props.pageSize}`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=2c879e2305cb4e4db847d40633b2a3c4&page=${page-1}&pageSize=${props.pageSize}`)
       .then(function (response) {
         setpage(-1+page)
         setData(response.data.articles)})
@@ -66,7 +66,7 @@ export default function News(props) {
                 <button type="button" disabled={page + 1 > Math.ceil(itemcount/props.pageSize)} onClick={Increm} className="btn btn-dark">Next &rarr;</button>
             </div>
           </div>
-        </div>
+          </div>
     </div>
     </>
   )
