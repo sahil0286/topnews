@@ -63,7 +63,7 @@ export default function News(props) {
           <h2 className="text-center">Top Stories</h2>
           {lodding && <Spinner />}
           <div className="row">
-            {data.map((item) => (
+            {data && data.map((item) => (
               <div className="col-md-4" key={item.url}>
                 <Nwesitem
                   title={
