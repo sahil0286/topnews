@@ -66,7 +66,6 @@ export default function News(props) {
             {data && data.map((item) => (
               <div className="col-md-4" key={item.url}>
                 <Nwesitem
-
                 author={
                     item.author
                       ? item.author.slice(0, 25) + " ..."  : "Unknown"
