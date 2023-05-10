@@ -66,6 +66,11 @@ export default function News(props) {
             {data && data.map((item) => (
               <div className="col-md-4" key={item.url}>
                 <Nwesitem
+
+author={
+                    item.author
+                      ? item.author  : "Unknown"
+                  }
                   title={
                     item.title
                       ? item.title.slice(0, 40) + " ..."
