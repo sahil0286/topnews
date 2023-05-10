@@ -81,8 +81,7 @@ export default function News(props) {
                   url={
                     item.url
                       ? item.url
-                      : "https://www.cbsnews.com/news/mtv-awards-drew-barrymore-writers-strike/"
-                  }
+                      : "https://www.cbsnews.com/news/mtv-awards-drew-barrymore-writers-strike/"}
                   imgurl={
                     item.urlToImage
                       ? item.urlToImage
