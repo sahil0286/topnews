@@ -44,8 +44,7 @@ function App() {
         />
         <Route
           path="*"
-          element={<h1 className="text-center my-5">404 Not Found</h1>}
-        />
+          element={<h1 className="text-center my-5">404 Not Found</h1>}/>
       </Routes>
       <Footer />
     </>
