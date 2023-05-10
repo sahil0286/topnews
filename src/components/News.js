@@ -60,7 +60,7 @@ export default function News(props) {
     <>
       <div className="container my-5">
         <div className="row my-3">
-          <h2 className="text-center">Top Stories</h2>
+          <h2 className="text-center">Top {props.category.charAt(0).toUpperCase() + props.category.slice(1)} Stories</h2>
           {lodding && <Spinner />}
           <div className="row">
             {data && data.map((item) => (
