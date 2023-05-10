@@ -66,26 +66,22 @@ export default function News(props) {
             {data && data.map((item) => (
               <div className="col-md-4" key={item.url}>
                 <Nwesitem
-
-author={
+                author={
                     item.author
                       ? item.author.slice(0, 25) + " ..."  : "Unknown"
                   }
                   title={
                     item.title
                       ? item.title.slice(0, 40) + " ..."
-                      : "After Drew Barrymore drops out as host, MTV Awards show won't be live event"
-                  }
+                      : "After Drew Barrymore drops out as host, MTV Awards show won't be live event"}
                   desc={
                     item.description
                       ? item.description.slice(0, 100) + " ..."
-                      : "The news also comes after the Writer's Guild of America announced​ that it planned to picket outside the show."
-                  }
+                      : "The news also comes after the Writer's Guild of America announced​ that it planned to picket outside the show."}
                   url={
                     item.url
                       ? item.url
-                      : "https://www.cbsnews.com/news/mtv-awards-drew-barrymore-writers-strike/"
-                  }
+                      : "https://www.cbsnews.com/news/mtv-awards-drew-barrymore-writers-strike/"}
                   imgurl={
                     item.urlToImage
                       ? item.urlToImage
