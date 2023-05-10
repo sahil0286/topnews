@@ -134,8 +134,7 @@ export default function Footer() {
                 <img
                   src={iconavbar}
                   style={{ width: "40px", height: "40px" }}
-                  alt="TopNews icon"
-                />
+                  alt="TopNews icon"/>
               </Link>
               <span className="mb-3 mb-md-0 text-light">
                 © 2023 Top News, Inc. Created By :{" "}
