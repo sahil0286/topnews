@@ -73,8 +73,7 @@ export default function News(props) {
                   title={
                     item.title
                       ? item.title.slice(0, 40) + " ..."
-                      : "After Drew Barrymore drops out as host, MTV Awards show won't be live event"
-                  }
+                      : "After Drew Barrymore drops out as host, MTV Awards show won't be live event"}
                   desc={
                     item.description
                       ? item.description.slice(0, 100) + " ..."
