@@ -130,8 +130,7 @@ export default function Footer() {
             <div className="col-md-4 d-flex align-items-center">
               <Link
                 to="/"
-                className="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1"
-              >
+                className="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
                 <img
                   src={iconavbar}
                   style={{ width: "40px", height: "40px" }}
