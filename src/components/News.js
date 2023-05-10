@@ -60,12 +60,17 @@ export default function News(props) {
     <>
       <div className="container my-5">
         <div className="row my-3">
-          <h2 className="text-center">Top Stories</h2>
+          <h2 className="text-center">Top {props.category.charAt(0).toUpperCase() + props.category.slice(1)} Stories</h2>
           {lodding && <Spinner />}
           <div className="row">
-            {data.map((item) => (
+            {data && data.map((item) => (
               <div className="col-md-4" key={item.url}>
                 <Nwesitem
+
+author={
+                    item.author
+                      ? item.author.slice(0, 25) + " ..."  : "Unknown"
+                  }
                   title={
                     item.title
                       ? item.title.slice(0, 40) + " ..."
