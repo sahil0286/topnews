@@ -16,8 +16,8 @@ export default function Nwesitem(props) {
           <a href={props.url} className="btn btn-primary">
             Read More
           </a>
-          <div class=" mx-2">
-            <small class="text-body-secondary">Author : {props.author}</small>
+          <div className=" mx-2">
+            <small className="text-body-secondary">Author : {props.author}</small>
           </div>
         </div>
       </div>
