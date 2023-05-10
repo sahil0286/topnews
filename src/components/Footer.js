@@ -12,7 +12,7 @@ export default function Footer() {
       <footer className="py-1">
       <div className="row">
         <div className="col-6 col-md-2 mb-3">
-          <h5>STOCK MARKET UPDATES</h5>
+          <h5>STOCK MARKET</h5>
           <ul className="nav flex-column">
             <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-light">Stock market trends</Link></li>
             <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-light">Fundamental analysis</Link></li>
@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         <div className="col-6 col-md-2 mb-3">
-          <h5>CASINOS / ONLINE BETTING</h5>
+          <h5>ONLINE BETTING</h5>
           <ul className="nav flex-column">
             <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-light">Jackpot Wins</Link></li>
             <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-light">Gaming Regulations</Link></li>
