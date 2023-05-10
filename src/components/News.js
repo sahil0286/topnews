@@ -69,7 +69,7 @@ export default function News(props) {
 
 author={
                     item.author
-                      ? item.author.slice(0, 10) + " ..."  : "Unknown"
+                      ? item.author.slice(0, 25) + " ..."  : "Unknown"
                   }
                   title={
                     item.title
