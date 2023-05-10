@@ -64,7 +64,7 @@ export default function Footer() {
         <img src={iconavbar } style={{width:"40px" ,height:"40px"}} alt="TopNews icon" />
       </Link>
       <span className="mb-3 mb-md-0 text-light">© 2023 Top News, Inc. Created By : </span> &nbsp;
-      <Link to="https://www.linkedin.com/in/sahilfakir/" className="nav-link p-0 text-primary">Sahil Fakir</Link>
+      <Link to="https://www.linkedin.com/in/sahilfakir/" className="nav-link p-0 text-primary-emphasis">Sahil Fakir</Link>
 
     </div>
         <ul className="list-unstyled d-flex">
