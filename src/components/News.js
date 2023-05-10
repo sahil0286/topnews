@@ -77,8 +77,7 @@ export default function News(props) {
                   desc={
                     item.description
                       ? item.description.slice(0, 100) + " ..."
-                      : "The news also comes after the Writer's Guild of America announced​ that it planned to picket outside the show."
-                  }
+                      : "The news also comes after the Writer's Guild of America announced​ that it planned to picket outside the show."}
                   url={
                     item.url
                       ? item.url
