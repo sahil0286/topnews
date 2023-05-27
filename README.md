@@ -36,7 +36,7 @@ To use the News API Project, follow these steps:
 1. Clone the repository: `git clone https://github.com/sahil0286/topnews.git`
 2. Install dependencies: `npm install`
 3. Obtain an API key: Visit [newsapi.org](https://newsapi.org/) to create an account and generate an API key.
-4. Set up environment variables: Create a `.env` file in the project root directory and add your API key using the format `REACT_APP_API_KEY=your-api-key`.
+4. Set up your API key using the format `apiKey=your-api-key` in News.js File in every fetch function.
 5. Start the development server: `npm start`
 6. Open your web browser and navigate to `http://localhost:3000`.
 
